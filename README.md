@@ -5,7 +5,7 @@ This is a simple quick template for a <a href="https://github.com/benkauffman/ja
 
 Gradle Build
 -----
-Windows run `.\gradlew ` followed by the gradle command
+Windows run `.\gradlew ` followed by the gradle command <br>
 Unix run `./gradlew ` followed by the gradle command
 
 `clean build` will package the source into <b>/build/libs/</b> which can be deployed through a web server
