@@ -1,0 +1,4 @@
+2016-08-17 18:11:00,714 DEBUG c.k.j.s.Settings [478113430@qtp-195359600-0] validating environment 
+2016-08-17 18:11:00,780 DEBUG c.n.c.u.OverridingPropertiesConfiguration [478113430@qtp-195359600-0] Base path set to file:///Users/benkauffman/development/java/jetty-gradle-REST/build/resources/main/ 
+2016-08-17 18:11:00,780 DEBUG c.n.c.u.OverridingPropertiesConfiguration [478113430@qtp-195359600-0] FileName set to local.properties 
+2016-08-17 18:11:00,780 DEBUG c.n.c.u.OverridingPropertiesConfiguration [478113430@qtp-195359600-0] URL set to file:/Users/benkauffman/development/java/jetty-gradle-REST/build/resources/main/local.properties 
