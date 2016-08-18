@@ -17,3 +17,9 @@ Microservice
 ------------
 The default template endpoint is <i>http://localhost:8080/api/test/hello</i> 
 <br>The resource code can be referenced and modified <a href="https://github.com/benkauffman/java-gradle-jetty-webservice/blob/master/src/main/java/com/krashidbuilt/jetty/resource/TemplateResource.java">here</a>
+
+
+Settings & Configurations
+-------------------------
+I've included <a href="https://github.com/Netflix/archaius/wiki/Users-Guide">Netflix Archaius</a> to manage environment settings & configurations
+<br>The code for which can be seen <a href="https://github.com/benkauffman/java-gradle-jetty-webservice/blob/master/src/main/java/com/krashidbuilt/jetty/service/Settings.java">here</a>
