@@ -3,7 +3,6 @@ package com.krashidbuilt.jetty.resource;
 import com.krashidbuilt.jetty.model.Test;
 import com.krashidbuilt.jetty.service.Settings;
 
-//import org.apache.log4j.Logger;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
