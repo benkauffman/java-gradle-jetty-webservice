@@ -16,7 +16,6 @@ import java.util.List;
 
 @Path("/test")
 public class TestResource {
-//	private static Logger LOGGER = Logger.getLogger(TestResource.class.getName());
 	private static Logger LOGGER = LogManager.getLogger();
 
 	@GET()

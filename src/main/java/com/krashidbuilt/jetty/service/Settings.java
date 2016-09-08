@@ -13,7 +13,6 @@ import org.apache.logging.log4j.LogManager;
  * Created by Ben Kauffman on 2/21/2016.
  */
 public class Settings {
-//    private static Logger LOGGER = Logger.getLogger(Settings.class.getName());
     private static Logger LOGGER = LogManager.getLogger();
 
     private static DynamicPropertyFactory dynamicPropertyFactory;
