@@ -2,15 +2,21 @@ package com.krashidbuilt.jetty.service;
 
 import com.netflix.config.ConfigurationManager;
 import com.netflix.config.DynamicPropertyFactory;
-import org.apache.log4j.Logger;
 
 import java.io.IOException;
+
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 
 /**
  * Created by Ben Kauffman on 2/21/2016.
  */
 public class Settings {
-    private static Logger LOGGER = Logger.getLogger(Settings.class.getName());
+//    private static Logger LOGGER = Logger.getLogger(Settings.class.getName());
+    private static Logger LOGGER = LogManager.getLogger();
+
     private static DynamicPropertyFactory dynamicPropertyFactory;
 
     static {

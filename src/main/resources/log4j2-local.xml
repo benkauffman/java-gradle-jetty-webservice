@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
-    <Appenders>
-        <File name="file" fileName="app.log">
-            <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
-            </PatternLayout>
-        </File>
-        <Console name="STDOUT" target="SYSTEM_OUT">
-            <PatternLayout pattern="%m%n"/>
+<configuration status="WARN">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] [%logger{1.}:%L] - %msg%n"/>
         </Console>
-    </Appenders>
-    <Loggers>
-        <Root level="trace">
-            <AppenderRef ref="file" level="DEBUG"/>
-            <AppenderRef ref="STDOUT" level="INFO"/>
-        </Root>
-    </Loggers>
-</Configuration>
+
+        <RollingFile name="RollingFile" fileName="logs/java-gradle-jetty-webservice.log" filePattern="logs/java-gradle-jetty-webservice-%d{yyyyMMddHHmm}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%t] [%-5level] [%logger{36:%L] - %msg%n"/>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <root level="debug">
+            <appender-ref ref="Console" level="debug"/>
+            <appender-ref ref="RollingFile" level="info"/>
+        </root>
+    </loggers>
+</configuration>
